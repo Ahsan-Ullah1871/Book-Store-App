@@ -46,7 +46,7 @@ const BookForm = () => {
 	return (
 		<div class="p-4 overflow-hidden bg-white shadow-cardShadow rounded-md">
 			<h4 class="mb-8 text-xl font-bold text-center">
-				{isEditBook ? "Update  Book" : "Add New Book"}
+				Add New Book
 			</h4>
 			<form class="book-form" id="book_form" onSubmit={onSubmit}>
 				<div class="space-y-2">
