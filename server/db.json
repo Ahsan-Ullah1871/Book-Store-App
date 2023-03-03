@@ -4,7 +4,7 @@
       "name": "Slow Horses (Deluxe Edition)",
       "author": "Mick Herron",
       "thumbnail": "https://m.media-amazon.com/images/I/51Ga5GuElyL._SX331_BO1,204,203,200_.jpg",
-      "price": 14,
+      "price": "500",
       "rating": 3,
       "featured": false,
       "id": 1
@@ -19,13 +19,31 @@
       "id": 2
     },
     {
-      "name": "Eloquent JavaScript, 3rd Edition",
+      "name": "Eloquent JavaScript, 4th Edition",
       "author": "Marijn Haverbeke",
       "thumbnail": "https://m.media-amazon.com/images/I/51InjRPaF7L._SX377_BO1,204,203,200_.jpg",
       "price": 23.99,
       "rating": 4,
       "featured": true,
       "id": 4
+    },
+    {
+      "featured": false,
+      "name": "Javascript 3 books",
+      "author": "Ahsan Ullah",
+      "thumbnail": "https://th.bing.com/th/id/OIP.WGQXRCh0NxtuUrX7IrI5egAAAA?w=183&h=274&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "price": "300",
+      "rating": "5",
+      "id": 5
+    },
+    {
+      "featured": true,
+      "name": "Javascript 3 books",
+      "author": "Ahsans",
+      "thumbnail": "https://th.bing.com/th/id/OIP.WGQXRCh0NxtuUrX7IrI5egAAAA?w=183&h=274&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+      "price": "23",
+      "rating": "5",
+      "id": 6
     }
   ]
 }
