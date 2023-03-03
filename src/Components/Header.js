@@ -7,11 +7,13 @@ const Header = () => {
 
 	const [search_text, setSearch_text] = useState("");
 
+	// Search Handler (fort search book by value change )
 	const searchHandler = (value) => {
 		setSearch_text(value);
 		dispatch(search_book(value));
 	};
 
+	//  Search Handler (fort search book by enter press)
 	const formSubmit = (e) => {
 		e.preventDefault();
 		dispatch(search_book(search_text));

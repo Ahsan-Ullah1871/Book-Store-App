@@ -11,6 +11,7 @@ const BookList = () => {
 	const type = useSelector((state) => state.type);
 	const search_text = useSelector((state) => state.search_text);
 
+	// Fetching books
 	useEffect(() => {
 		dispatch(fetchBooks);
 	}, [dispatch]);
@@ -25,7 +26,7 @@ const BookList = () => {
 		}
 	};
 
-	// Serch book by search text
+	// Search book by   text
 	const seacr_book = (book) => {
 		if (search_text !== "" || search_text.length > 0) {
 			return book.name

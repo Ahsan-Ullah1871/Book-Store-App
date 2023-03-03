@@ -5,23 +5,25 @@ import UpdateBook from "../redux/Book/thunk/updateBook";
 
 const BookForm = () => {
 	const dispatch = useDispatch();
+
 	const isEditBook = useSelector((state) => state.is_book_edit);
 	const selectedBookData = useSelector(
 		(state) => state.selected_book_data
 	);
 
+	// form State
 	const [bookFormFields, setBookFormFields] = useState({
 		featured: false,
 	});
 
-	//
+	//Effect (for set default value in state when isEditBook will be true )
 	useEffect(() => {
 		if (isEditBook && Object.keys(selectedBookData).length > 0) {
 			setBookFormFields(selectedBookData);
 		}
 	}, [isEditBook, selectedBookData]);
 
-	// Onchange handler for input  value s
+	// Onchange handler for input  values
 	const onChangeValue = (key_name, value) => {
 		setBookFormFields((prevState) => ({
 			...prevState,
