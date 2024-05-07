@@ -1,9 +1,11 @@
-# Book Store App
+![Alt text](image.png)
+
+# Book Store App with Redux
 
 ## Description
 
-This is a web application developed for a book store, following specific
-functionalities and requirements.
+This is a web application developed for a book store, featuring state management
+using Redux along with other functionalities and requirements.
 
 ## Features
 
@@ -22,9 +24,12 @@ functionalities and requirements.
   information, resets the form, and changes the button text back to "Add Book."
 - **Delete Book**: Clicking on the delete button removes the book from the
   database.
+- **State Management with Redux**: Utilizes Redux for managing application
+  state, providing a centralized store for all state changes.
 
 ## Technologies Used
 
-- Frontend: HTML, CSS, JavaScript
+- Frontend: HTML, CSS, JavaScript, React
+- State Management: Redux
 - Backend: Node.js, Express.js
-- Database: Postgres,prisma
+- Database: Postgres,Prisma
