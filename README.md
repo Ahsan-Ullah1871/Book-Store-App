@@ -33,3 +33,9 @@ using Redux along with other functionalities and requirements.
 - State Management: Redux
 - Backend: Node.js, Express.js
 - Database: Postgres,Prisma
+
+## Live Demo
+
+Explore the live demo of the project
+[here](https://book-store-app-brown.vercel.app/).
+
