@@ -1,18 +1,30 @@
-Live Link: https://book-store-asiignment-by-ahsan.netlify.app/
+# Book Store App
 
-## এই এসাইনমেন্ট এ যা যা করতে হবেঃ
+## Description
 
-✓ ডান পাশে দেয়া ফর্ম এ, যাবতীয় তথ্য ইনপুট দিয়ে সাবমিট করলে, সেটি asynchronously লোকাল সার্ভারে গিয়ে Store হবে।
+This is a web application developed for a book store, following specific
+functionalities and requirements.
 
-✓ "Book List" - সেকশনে সার্ভার থেকে বই এর লিস্ট গুলো নিয়ে এসে দেখাতে হবে।
+## Features
 
-✓ "Book List" - এর ডানে "All, Featured নামে দুটি ট্যাগ আছে, Featured সিলেক্ট করলে 'Featured' বই গুলো শুধু ফিল্টার করে দেখাবে। All দিলে সব গুলোই দেখাবে।
+- **Asynchronous Data Storage**: Submitted data through the form on the right
+  side is stored asynchronously on the local server.
+- **Book List Display**: Displays a list of books fetched from the server in the
+  "Book List" section.
+- **Filtering by Tags**: Provides two tags, "All" and "Featured," in the "Book
+  List" section. Selecting "Featured" filters and displays only featured books.
+- **Search Bar**: Allows searching for books by name. Search results are
+  filtered and displayed in the "Book List" section.
+- **Edit Book Information**: Clicking on the edit icon of a card item redirects
+  to the "Add New Book" form on the right side. The button text changes from
+  "Add Book" to "Update Book."
+- **Update Book Information**: Clicking on "Update Book" updates the book
+  information, resets the form, and changes the button text back to "Add Book."
+- **Delete Book**: Clicking on the delete button removes the book from the
+  database.
 
-✓ নেভিগেশন মেনুতে "Search Bar" - আছে, সেখানে সার্চ করলে, শুধু মাত্র বই এর নাম দিয়ে সার্চ করবে, এবং সার্চ রেজাল্ট "Book List" সেকশনেই ফিল্টার হয়ে দেখাবে। সার্চ বার ফাঁকা থাকলে, স্বাভাবিক ভাবে যেমন সব বই গুলো দেখায়, সেভাবেই দেখাবে।
+## Technologies Used
 
-✓ কার্ড আইটেমের Edit আইকনে ক্লিক করলে, কার্ডের সব তথ্য ডান পাশের "Add New Book" ফর্মে চলে যাবে। বাটনের নাম তখন "Add Book" থেকে "Update Book" এ কনভার্ট হবে।
-
-✓ "Update Book" এ ক্লিক করলে, প্রোডাক্ট আপডেট হয়ে যাবে, ফর্ম Reset হয়ে যাবে, এবং বাটনের আগের title মানে "Add Book" চলে আসবে।
-
-✓ সব শেষে ডিলিট বাটন ক্লিক করলে, বই টি ডেটাবেজ থেকে ডিলিট হয়ে যাবে।
-
+- Frontend: HTML, CSS, JavaScript
+- Backend: Node.js, Express.js
+- Database: Postgres,prisma

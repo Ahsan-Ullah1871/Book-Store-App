@@ -1,19 +1,19 @@
+import AxiosReq from "../../lib/api";
 import { add_book } from "../actions";
 
 const addBook = (book_details) => {
 	return async (dispatch, getState) => {
-		const response = await fetch("http://localhost:9000/books", {
-			method: "POST",
-			body: JSON.stringify({
+		try {
+			const response = await AxiosReq.post(`books`, {
 				...book_details,
-			}),
-			headers: {
-				"Content-type": "application/json",
-			},
-		});
-		const book = await response.json();
-
-		dispatch(add_book(book));
+				rating: Number(book_details.rating),
+				price: Number(book_details.price),
+			});
+			dispatch(add_book(book_details));
+		} catch (error) {
+			alert("You are not authorized to add the book");
+			console.log(error);
+		}
 	};
 };
 

@@ -23,7 +23,7 @@ const Header = () => {
 		<nav class="py-4 2xl:px-6">
 			<div class="container flex items-center justify-between">
 				<img
-					src="/images/logo.svg"
+					src="/techlab.png"
 					width="150px"
 					class="object-contain"
 				/>
@@ -57,7 +57,7 @@ const Header = () => {
 							type="text"
 							placeholder="Filter books..."
 							class="search"
-							id="lws-searchBook"
+							id="techlab-searchBook"
 							onChange={(e) =>
 								searchHandler(
 									e.target.value

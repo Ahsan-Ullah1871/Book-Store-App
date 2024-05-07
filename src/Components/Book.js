@@ -20,14 +20,14 @@ const Book = ({ book, key }) => {
 	return (
 		<div class="book-card">
 			<img
-				class="h-[240px] w-[170px] object-cover lws-bookThumbnail"
+				class="h-[240px] w-[170px] object-cover techlab-bookThumbnail"
 				src={thumbnail}
 				alt="book"
 			/>
 			<div class="flex-1 h-full pr-2 pt-2 flex flex-col">
 				<div class="flex items-center justify-between">
 					{featured ? (
-						<span class="badge-success lws-Badge">
+						<span class="badge-success techlab-Badge">
 							featured
 						</span>
 					) : (
@@ -35,7 +35,7 @@ const Book = ({ book, key }) => {
 					)}
 					<div class="text-gray-500 space-x-2">
 						<button
-							class="lws-edit"
+							class="techlab-edit"
 							onClick={() =>
 								editHandler(book)
 							}
@@ -54,7 +54,7 @@ const Book = ({ book, key }) => {
 								/>
 							</svg>
 						</button>
-						<button class="lws-delete">
+						<button class="techlab-delete">
 							<svg
 								fill="none"
 								viewBox="0 0 24 24"
@@ -76,14 +76,14 @@ const Book = ({ book, key }) => {
 				</div>
 
 				<div class="space-y-2 mt-4 h-full">
-					<h4 class="lws-bookName">{name}</h4>
-					<p class="lws-author">{author}</p>
-					<div class="lws-stars">
+					<h4 class="techlab-bookName">{name}</h4>
+					<p class="techlab-author">{author}</p>
+					<div class="techlab-stars">
 						{rating >= 1 && (
 							<svg
 								viewBox="0 0 20 20"
 								fill="currentColor"
-								class="lws-star"
+								class="techlab-star"
 							>
 								<path
 									fill-rule="evenodd"
@@ -96,7 +96,7 @@ const Book = ({ book, key }) => {
 							<svg
 								viewBox="0 0 20 20"
 								fill="currentColor"
-								class="lws-star"
+								class="techlab-star"
 							>
 								<path
 									fill-rule="evenodd"
@@ -109,7 +109,7 @@ const Book = ({ book, key }) => {
 							<svg
 								viewBox="0 0 20 20"
 								fill="currentColor"
-								class="lws-star"
+								class="techlab-star"
 							>
 								<path
 									fill-rule="evenodd"
@@ -122,7 +122,7 @@ const Book = ({ book, key }) => {
 							<svg
 								viewBox="0 0 20 20"
 								fill="currentColor"
-								class="lws-star"
+								class="techlab-star"
 							>
 								<path
 									fill-rule="evenodd"
@@ -135,7 +135,7 @@ const Book = ({ book, key }) => {
 							<svg
 								viewBox="0 0 20 20"
 								fill="currentColor"
-								class="lws-star"
+								class="techlab-star"
 							>
 								<path
 									fill-rule="evenodd"
@@ -145,7 +145,7 @@ const Book = ({ book, key }) => {
 							</svg>
 						)}
 					</div>
-					<p class="lws-price">BDT {price}</p>
+					<p class="techlab-price">BDT {price}</p>
 				</div>
 			</div>
 		</div>

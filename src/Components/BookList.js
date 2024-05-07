@@ -62,7 +62,7 @@ const BookList = () => {
 										"featured" &&
 										"active-filter",
 								].join(" ")}
-								id="lws-filterAll"
+								id="techlab-filterAll"
 								onClick={() =>
 									typeHandler(
 										"All"
@@ -78,7 +78,7 @@ const BookList = () => {
 										"featured" &&
 										"active-filter",
 								].join(" ")}
-								id="lws-filterFeatured"
+								id="techlab-filterFeatured"
 								onClick={() =>
 									typeHandler(
 										"featured"
@@ -89,7 +89,7 @@ const BookList = () => {
 							</button>
 						</div>
 					</div>
-					<div class="lws-bookContainer">
+					<div class="techlab-bookContainer">
 						{books
 							?.filter(filter_by_type)
 							?.filter(seacr_book)
